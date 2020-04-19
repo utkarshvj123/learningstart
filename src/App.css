@@ -1,22 +1,50 @@
-.App {
-  text-align: center;
+.cards {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  column-gap: 10px;
 }
 
-.App-logo {
-  height: 40vmin;
+.content {
+  box-shadow: 0 4px 12px 0 #e5e9ea;
+  padding: 5px 10px;
+}
+@media (min-width: 577px) and (max-width: 1024px) {
+  .cards {
+    display: grid;
+    grid-template-columns: auto auto;
+  }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+@media (max-width: 576px) {
+  .cards {
+    display: grid;
+    grid-template-columns: 100%;
+  }
 }
 
-.App-link {
-  color: #09d3ac;
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  display: inline;
+}
+
+.active {
+  color: #585858 !important;
+  background-color: #ecf9ff !important;
+  border-right: 4px solid #009de6 !important;
+  outline: none;
+  box-shadow: none;
+}
+/* navbar css */
+/* The navigation menu links */
+.sidenav a {
+  padding: 6px 8px 6px 16px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
 }
